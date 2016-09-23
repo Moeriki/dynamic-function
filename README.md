@@ -17,15 +17,21 @@ npm install --save dynamic-function
 ```javascript
 const dynamicFunction = require('dynamic-function');
 
-function originalFunction(originalArg, originalArg) {
-    //
+function originalFunction(originalArg1, originalArg2) {
+    /* ... */
 }
 
 const wrappedFunction = dynamicFunction(originalFunction, {
-  name: originalFunction.name,
+  name: 'wrapped_' + originalFunction.name,
   length: originalFunction.length,
 });
 
-console.log(wrappedFunction.name);   // logs 'originalFunction'
+console.log(wrappedFunction.name);   // logs 'wrapped_originalFunction'
 console.log(wrappedFunction.length); // logs 2
+
+console.log(wrappedFunction.toString());
+
+// function wrapped_originalFunction(originalArg1, originalArg2) {
+//   /* ... */
+// }
 ```
