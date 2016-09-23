@@ -1,7 +1,7 @@
 {
   "name": "dynamic-function",
   "version": "1.0.0",
-  "description": "Easily create functions with variable name and length.",
+  "description": "Easily create functions with dynamic name and length.",
   "keywords": [
     "dynamic",
     "function"
