@@ -5,4 +5,7 @@ module.exports = {
     'muriki/env/node',
     'muriki/es/2015-node4',
   ],
+  rules: {
+    'no-new-func': 0,
+  },
 };

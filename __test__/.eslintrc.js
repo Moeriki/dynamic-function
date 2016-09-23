@@ -1,7 +1,8 @@
 module.exports = {
-  root: true,
   extends: [
-    'muriki',
-    'muriki/lib/jest',
+    'muriki/plugins/jasmine',
   ],
+  rules: {
+    'func-names': 0,
+  },
 };
