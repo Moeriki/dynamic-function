@@ -20,6 +20,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "2.11.14",
     "eslint": "3.5.0",
     "eslint-config-muriki": "5.2.3",
     "eslint-plugin-import": "1.15.0",
