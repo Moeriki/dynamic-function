@@ -35,3 +35,9 @@ console.log(wrappedFunction.toString());
 //   /* ... */
 // }
 ```
+
+## Performance
+
+This should come as no surprise that there is some `eval` involved. Avoid overusing this in situations where high-load / performance is required.
+
+At start-up / low load situations should pose no problem.
