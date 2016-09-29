@@ -38,6 +38,6 @@ console.log(wrappedFunction.toString());
 
 ## Performance
 
-This should come as no surprise that there is some `eval` involved. Avoid overusing this in situations where high-load / performance is required.
+To generate this dynamic function there is `eval` involved.  This a [relatively slow JavaScript feature](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval). Avoid (over)using this in situations where high performance is required.
 
-At start-up / low load situations should pose no problem.
+At start-up (for Server applications) / low load situations using this should pose no problem.
