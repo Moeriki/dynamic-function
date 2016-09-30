@@ -4,7 +4,7 @@
 
 // modules
 
-const dynamicFunction = require('../lib');
+const dynamicFunction = require('../index');
 
 // tests
 
