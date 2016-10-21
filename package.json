@@ -16,6 +16,7 @@
   "scripts": {
     "lint": "eslint *.js __test__/",
     "test": "jest",
+    "coverage": "jest --coverage",
     "coveralls": "jest --coverage  && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {},
