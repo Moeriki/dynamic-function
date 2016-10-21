@@ -12,7 +12,7 @@ Easily create functions with dynamic name and length. This is useful for wrappin
 npm install --save dynamic-function
 ```
 
-## Usage  
+## Usage
 
 ```javascript
 const dynamicFunction = require('dynamic-function');
@@ -36,8 +36,19 @@ console.log(wrappedFunction.toString());
 // }
 ```
 
+## API
+
+> `dynamicFunction ( func [, options] )`
+> **func** : function
+> **options** : object (optional)
+> **options.bind** : object (default: null)
+> **options.name** : string (default: '')
+> **options.length** : number (default: 0)
+
 ## Performance
 
-To generate this dynamic function there is `eval` involved.  This a [relatively slow JavaScript feature](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval). Avoid (over)using this in situations where high performance is required.
+Some environments (eg. NodeJS < 4.x.x) don't support renaming functions with `Object.defineProperty`. In this case there is a fallback to `eval`.
+
+`eval` a [relatively slow JavaScript feature](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval). Avoid (over)using this in situations where high performance is required.
 
 At start-up (for Server applications) / low load situations using this should pose no problem.
