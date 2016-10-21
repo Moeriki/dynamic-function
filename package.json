@@ -23,10 +23,9 @@
   "devDependencies": {
     "coveralls": "^2.11.14",
     "eslint": "^3.8.1",
-    "eslint-config-muriki": "^6.1.0",
+    "eslint-config-muriki": "^6.1.2",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jasmine": "^1.8.1",
-    "eslint-plugin-node": "^2.0.0",
     "jest": "^16.0.2"
   }
 }

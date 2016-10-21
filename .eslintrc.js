@@ -2,10 +2,9 @@ module.exports = {
   root: true,
   extends: [
     'muriki',
-    'muriki/env/node',
-    'muriki/es/2015-node4',
+    'muriki/env/common-js',
   ],
   rules: {
-    'no-new-func': 0,
+    'comma-dangle': [2, 'never'],
   },
 };
